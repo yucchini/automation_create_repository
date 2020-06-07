@@ -20,7 +20,7 @@ PLATFORMS
 
 DEPENDENCIES
   dotenv
-  octokit
+  octokit (~> 4.0)
 
 BUNDLED WITH
    2.1.4
