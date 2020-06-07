@@ -1,11 +1,8 @@
 #!/bin/zsh
 
 function create() {
-    set -a
     source .env
-    set +a
     ruby github.rb $1
-    cd
     cd $FILEPATH$1
     git init
     git remote add origin git@github.com:$USERNAME/$1.git
